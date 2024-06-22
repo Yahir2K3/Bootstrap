@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reparaciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-image: url('imagenes/imagen 2.jpg'); background-size: cover; opacity: 0.8;">
+  <h1 class="text-white" style="opacity: 1.0;">YASCH Web</h1>
+  <p class="text-white" style="opacity: 1.0;">Soluciones informáticas a tu medida!</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="inicio.html">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="reparaciones.html">Reparaciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="row">
+    <div class="col-sm-12">
+      <h2>Reparaciones</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Equipo</th>
+            <th>Imagen</th>
+            <th>Problema</th>
+            <th>Opciones de Reparación</th>
+            <th>Costo</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portátil Lenovo</td>
+            <td><img src="imagenes/portatil lenovo.jpg" width="50" height="50"></td>
+            <td>Fallo de la batería</td>
+            <td>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modalReparacion1">Reparar Batería</button>
+              <button class="btn btn-secondary" data-toggle="modal" data-target="#modalReparacion2">Reemplazar Batería</button>
+            </td>
+            <td>50 USD</td>
+            <td>En reparación</td>
+          </tr>
+          <tr>
+            <td>Impresora HP</td>
+            <td><img src="imagenes/impresora HP.jpg" width="50" height="50"></td>
+            <td>Fallo de la impresión</td>
+            <td>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modalReparacion3">Reparar Impresora</button>
+              <button class="btn btn-secondary" data-toggle="modal" data-target="#modalReparacion4">Reemplazar Impresora</button>
+            </td>
+            <td>30 USD</td>
+            <td>Reparada</td>
+          </tr>
+          <tr>
+            <td>Tableta Apple</td>
+            <td><img src="imagenes/tableta apple.jpg" width="50" height="50"></td>
+            <td>Fallo de la pantalla</td>
+            <td>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modalReparacion5">Reparar Pantalla</button>
+              <button class="btn btn-secondary" data-toggle="modal" data-target="#modalReparacion6">Reemplazar Pantalla</button>
+            </td>
+            <td>100 USD</td>
+            <td>En reparación</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion1" tabindex="-1" role="dialog" aria-labelledby="modalReparacion1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion1Label">Reparar Batería</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reparar la batería del portátil Lenovo es de 50 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reparación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion2" tabindex="-1" role="dialog" aria-labelledby="modalReparacion2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion2Label">Reemplazar Batería</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reemplazar la batería del portátil Lenovo es de 100 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reemplazo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion3" tabindex="-1" role="dialog" aria-labelledby="modalReparacion3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion3Label">Reparar Impresora</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reparar la impresora HP es de 30 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reparación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion4" tabindex="-1" role="dialog" aria-labelledby="modalReparacion4Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion4Label">Reemplazar Impresora</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reemplazar la impresora HP es de 150 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reemplazo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion5" tabindex="-1" role="dialog" aria-labelledby="modalReparacion5Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion5Label">Reparar Pantalla</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reparar la pantalla de la tableta Apple es de 100 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reparación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales de reparación -->
+  <div class="modal fade" id="modalReparacion6" tabindex="-1" role="dialog" aria-labelledby="modalReparacion6Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReparacion6Label">Reemplazar Pantalla</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El costo de reemplazar la pantalla de la tableta Apple es de 200 USD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar Reemplazo</button>
+        </div>
+      </div>
+    </div>
+  </div>
